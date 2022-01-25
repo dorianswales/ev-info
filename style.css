@@ -40,14 +40,18 @@ nav {
     top: 10vh;
 }
 
+#myLinks h3 {
+    text-decoration: underline;
+}
+
 #myLinks a {
-    color: var(--vert);
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 #myLinks a:hover{
-    color: var(--vert_hover);
+    color: var(--vert);
 }
 
 .logo {
