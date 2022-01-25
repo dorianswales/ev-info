@@ -11,22 +11,72 @@
 
 <body>
 
-    <header>
+    <header> 
+        
+        <a href="index.html"> 
+            <img class="logo" src="assets/images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="topnav">
+
+            <a href="javascript:void(0);" class="icon" onclick="ToggleBurger()">
+                <img src="assets/images/bars-solid.svg" alt="hamburger" id="imgClickAndChange" onclick="changeImage()">
+            </a>
+
+        <div id="myLinks">
+            <h3>Thèmes</h3>
+            <a href="#ev">Véhicules électriques</a>
+            <a href="#environnement">Environnement</a>
+            <a href="#technologie">Technologie</a>
+            <a href="#technique">Technique</a>
+            <a href="#actualite">Actualités</a>
+            <a href="#etudes">Etudes</a>
+        </div>
+
+        </nav>
 
     </header>
 
-    <main>
+    <main class="article">
 
-        <section>
+        <section style="min-height: initial;">
+
+        <h1>Idées reçues sur les véhicules électriques</h1>
+
+            <div class="container">
+
+                <div class="info-article">
+
+                    <div><a href=""><h4>Environnement</h4></a></div>
+                    <div>Auteur :</div>
+                    <div>25 janvier 2022</div>
+
+                </div>
+
+                <div class="img-article">
+                    <img src="assets/images/Tesla_Roadster_2.webp" alt="Roadster 2">
+                </div>
+
+                <div class="share">
+                    <p>Partager</p>
+                </div>
+
+            </div>
+
+            <div class="border"></div>
+
+        </section>
+
+        <section class="article-text">
+
+            <p>Intro</p>
+            <h2>Sous-Titres</h2>
+            <p>Contenu</p>
 
         </section>
 
     </main>
 
-    <footer>
-     
-    </footer>
-    
 </body>
 
 <script src="assets/js/main.js"></script>

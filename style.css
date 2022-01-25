@@ -78,16 +78,15 @@ h1,h2,h3,h4 {
     font-family: var(--title_font);
 }
 
+h2 {
+    margin: 2em 0 2em;
+}
+
 p {
     line-height: 1.5;
 }
 
-section {
-    min-height: 100vh;
-}
-
 .intro {
-    min-height: 10vh;
     text-align: center;
 }
 
@@ -98,7 +97,15 @@ section {
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: 4em;
+    justify-items: center;
+    grid-gap: 2em;
+}
+
+.card {
+    height: fit-content;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    width: 80%;
 }
 
 .card img {
@@ -123,6 +130,7 @@ section {
 .card-title h3 {
     color: #0d6efd;
     text-align: center;
+    margin: 1em;
 }
 
 .card-body {
@@ -135,7 +143,7 @@ section {
 
 .card-footer {
     color: #777;
-    padding-left: 1em;
+    padding: 0 1em 1em;
 }
 
 footer {
@@ -152,6 +160,60 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+/*Articles*/
+
+.article {
+    margin: 2em;
+}
+
+.article h1 {
+    text-align: center;
+    margin: 2em;
+}
+
+.container {
+    display: grid;
+    margin: 0 2em 2em 2em;
+}
+
+.info-article div {
+    padding: 1em 0 1em;
+}
+
+.info-article h4 {
+    margin: 0;
+}
+
+.info-article a {
+    color: var(--vert);
+    text-decoration: none;
+}
+
+.img-article {
+    grid-row-start: 1;
+}
+
+.img-article img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.share {
+    text-align: center;
+}
+
+.border {
+    border-bottom: 1px solid #777;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.article-text {
+    margin-top: 4em;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -172,6 +234,26 @@ footer a {
     footer {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: none;
+    }
+
+    /*Articles*/
+
+    .article {
+        margin: 2em 4em 2em 4em;
+    }
+
+    .container {
+        grid-template-columns: 20% 60% 20%;
+        margin: auto;
+        width: 80%;
+    }
+
+    .img-article {
+        grid-row-start: initial;
+    }
+
+    .share {
+        text-align: end;
     }
     
 }
