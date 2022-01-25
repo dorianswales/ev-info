@@ -1,0 +1,147 @@
+:root {
+    --title_font: "Helvetica";
+    --body_font: "Roboto", sans-serif;
+    --vert: #3AC696;
+    --vert_hover: #17c04f;
+    --bleu: #0B29FB;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(90deg, rgba(10,0,166,1) 0%, rgba(11,41,251,1) 92%);
+    height: 10vh;
+    padding: 0 2em 0 2em;
+}
+
+nav {
+    height: 50%;
+}
+
+/*Hamburger Menu*/
+
+#myLinks {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bleu);
+    color: white;
+    padding: 1em;
+    gap: 2em;
+    right: 0;
+    top: 10vh;
+}
+
+#myLinks a {
+    color: var(--vert);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#myLinks a:hover{
+    color: var(--vert_hover);
+}
+
+.logo {
+    width: 100%;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body_font);
+}
+
+main {
+    margin: 2em;
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--title_font);
+}
+
+p {
+    line-height: 1.5;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.intro {
+    min-height: 10vh;
+    text-align: center;
+}
+
+.intro h2 {
+    font-weight: normal;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4em;
+}
+
+.card img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a :hover {
+    color: var(--vert);
+}
+
+.card-title h3 {
+    color: #0d6efd;
+    text-align: center;
+}
+
+.card-body {
+    padding: 1em 1em;
+}
+
+.card-body h4 {
+    margin: 0;
+}
+
+.card-footer {
+    color: #777;
+    padding-left: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bleu);
+    color: white;
+    padding: 2em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
