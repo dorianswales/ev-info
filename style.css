@@ -1,9 +1,10 @@
 :root {
     --title_font: "Helvetica";
     --body_font: "Roboto", sans-serif;
-    --vert: #3AC696;
-    --vert_hover: #17c04f;
     --bleu: #0B29FB;
+    --bleu_2: #0098D8;
+    --vert: #5ABC00;
+    --vert_2 : #3AC696;
 }
 
 *, :after, :before {
@@ -16,7 +17,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(90deg, rgba(10,0,166,1) 0%, rgba(11,41,251,1) 92%);
+    background-color: var(--bleu);
     height: 10vh;
     padding: 0 2em 0 2em;
 }
@@ -79,7 +80,7 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-    margin: 2em 0 2em;
+    margin: 0;
 }
 
 p {
@@ -91,7 +92,16 @@ p {
 }
 
 .intro h2 {
-    font-weight: normal;
+    font-weight: 600;
+    color: var(--bleu);
+    margin: 2em 0 2em 0;
+}
+
+.titre-accueil {
+    background-color: var(--vert);
+    border-radius: 2px;
+    color: white;
+    padding: 1em;
 }
 
 .grid-cards {
@@ -99,6 +109,7 @@ p {
     grid-template-columns: repeat(1,1fr);
     justify-items: center;
     grid-gap: 2em;
+    margin: 4em 0 4em 0;
 }
 
 .card {
@@ -187,9 +198,14 @@ footer a {
 }
 
 .info-article a {
-    color: var(--vert);
+    color:#0d6efd;;
     text-decoration: none;
 }
+
+.info-article a :hover {
+    color: var(--vert);
+}
+
 
 .img-article {
     grid-row-start: 1;
